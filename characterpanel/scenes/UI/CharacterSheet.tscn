@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/backgroundSelection.png" type="Texture" id=1]
 [ext_resource path="res://assets/inventoryFrame.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://assets/wrists_back.png" type="Texture" id=10]
 [ext_resource path="res://assets/back_back.png" type="Texture" id=11]
 [ext_resource path="res://assets/finger_back.png" type="Texture" id=12]
+[ext_resource path="res://assets/lil_bar.png" type="Texture" id=13]
 
 [node name="CharacterSheet" type="Control"]
 anchor_right = 1.0
@@ -190,6 +191,37 @@ margin_left = 112.0
 margin_right = 468.0
 margin_bottom = 666.0
 size_flags_horizontal = 3
+
+[node name="NameBackground" type="TextureRect" parent="Background/V/Main/Middle"]
+anchor_right = 1.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 80 )
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/V/Main/Middle/NameBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Name" type="Label" parent="Background/V/Main/Middle/NameBackground/VBoxContainer"]
+margin_top = -1.0
+margin_right = 356.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 0, 45 )
+text = "Subscribers"
+align = 1
+valign = 2
+
+[node name="LabelClass" type="Label" parent="Background/V/Main/Middle/NameBackground/VBoxContainer"]
+margin_top = 49.0
+margin_right = 356.0
+margin_bottom = 80.0
+size_flags_vertical = 7
+text = "Level 32 Warrior"
+align = 1
 
 [node name="RightEquip" type="VBoxContainer" parent="Background/V/Main"]
 margin_left = 468.0
