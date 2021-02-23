@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shoe_back.png-e2a53c2e8470e9d825f3b79761882031.stex"
+path="res://.import/legs_back.png-cbd926d12ab51cec3e6f3b078a5c45fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/shoe_back.png"
-dest_files=[ "res://.import/shoe_back.png-e2a53c2e8470e9d825f3b79761882031.stex" ]
+source_file="res://assets/legs_back.png"
+dest_files=[ "res://.import/legs_back.png-cbd926d12ab51cec3e6f3b078a5c45fd.stex" ]
 
 [params]
 

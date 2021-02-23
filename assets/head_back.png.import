@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/helm_back.png-37230bed160c3dacbd50ed9d4df47ad2.stex"
+path="res://.import/head_back.png-08df6a75ce9e14995d7b0b137bd21e6c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/helm_back.png"
-dest_files=[ "res://.import/helm_back.png-37230bed160c3dacbd50ed9d4df47ad2.stex" ]
+source_file="res://assets/head_back.png"
+dest_files=[ "res://.import/head_back.png-08df6a75ce9e14995d7b0b137bd21e6c.stex" ]
 
 [params]
 

@@ -2,11 +2,11 @@
 
 [ext_resource path="res://assets/backgroundSelection.png" type="Texture" id=1]
 [ext_resource path="res://assets/inventoryFrame.png" type="Texture" id=2]
-[ext_resource path="res://assets/helm_back.png" type="Texture" id=3]
+[ext_resource path="res://assets/head_back.png" type="Texture" id=3]
 [ext_resource path="res://assets/neck_back.png" type="Texture" id=4]
-[ext_resource path="res://assets/pants_back.png" type="Texture" id=5]
+[ext_resource path="res://assets/legs_back.png" type="Texture" id=5]
 [ext_resource path="res://assets/chest_back.png" type="Texture" id=6]
-[ext_resource path="res://assets/shoe_back.png" type="Texture" id=7]
+[ext_resource path="res://assets/feet_back.png" type="Texture" id=7]
 
 [node name="CharacterSheet" type="Control"]
 anchor_right = 1.0
@@ -66,10 +66,9 @@ margin_bottom = 25.0
 rect_min_size = Vector2( 0, 25 )
 
 [node name="Head" type="TextureRect" parent="Background/V/Main/LeftEquip"]
-margin_left = -1.0
-margin_top = 44.0
-margin_right = 99.0
-margin_bottom = 144.0
+margin_top = 45.0
+margin_right = 100.0
+margin_bottom = 145.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -90,10 +89,9 @@ __meta__ = {
 }
 
 [node name="Neck" type="TextureRect" parent="Background/V/Main/LeftEquip"]
-margin_left = -1.0
-margin_top = 164.0
-margin_right = 99.0
-margin_bottom = 264.0
+margin_top = 165.0
+margin_right = 100.0
+margin_bottom = 265.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -114,10 +112,9 @@ __meta__ = {
 }
 
 [node name="Chest" type="TextureRect" parent="Background/V/Main/LeftEquip"]
-margin_left = -1.0
-margin_top = 284.0
-margin_right = 99.0
-margin_bottom = 384.0
+margin_top = 285.0
+margin_right = 100.0
+margin_bottom = 385.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -138,10 +135,9 @@ __meta__ = {
 }
 
 [node name="Legs" type="TextureRect" parent="Background/V/Main/LeftEquip"]
-margin_left = -1.0
-margin_top = 404.0
-margin_right = 99.0
-margin_bottom = 504.0
+margin_top = 405.0
+margin_right = 100.0
+margin_bottom = 505.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -162,10 +158,9 @@ __meta__ = {
 }
 
 [node name="Feets" type="TextureRect" parent="Background/V/Main/LeftEquip"]
-margin_left = -1.0
-margin_top = 524.0
-margin_right = 99.0
-margin_bottom = 624.0
+margin_top = 525.0
+margin_right = 100.0
+margin_bottom = 625.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -187,15 +182,136 @@ __meta__ = {
 
 [node name="Middle" type="Control" parent="Background/V/Main"]
 margin_left = 112.0
-margin_right = 474.0
+margin_right = 468.0
 margin_bottom = 666.0
 size_flags_horizontal = 3
 
 [node name="RightEquip" type="VBoxContainer" parent="Background/V/Main"]
-margin_left = 474.0
+margin_left = 468.0
 margin_right = 568.0
 margin_bottom = 666.0
 rect_min_size = Vector2( 94, 0 )
+custom_constants/separation = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="Background/V/Main/RightEquip"]
+margin_right = 100.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 0, 25 )
+
+[node name="Head" type="TextureRect" parent="Background/V/Main/RightEquip"]
+margin_top = 45.0
+margin_right = 100.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Head"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Neck" type="TextureRect" parent="Background/V/Main/RightEquip"]
+margin_top = 165.0
+margin_right = 100.0
+margin_bottom = 265.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Neck"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chest" type="TextureRect" parent="Background/V/Main/RightEquip"]
+margin_top = 285.0
+margin_right = 100.0
+margin_bottom = 385.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Chest"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Legs" type="TextureRect" parent="Background/V/Main/RightEquip"]
+margin_top = 405.0
+margin_right = 100.0
+margin_bottom = 505.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Legs"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Feets" type="TextureRect" parent="Background/V/Main/RightEquip"]
+margin_top = 525.0
+margin_right = 100.0
+margin_bottom = 625.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Feets"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="MarginRight" type="MarginContainer" parent="Background/V/Main"]
 margin_left = 568.0
