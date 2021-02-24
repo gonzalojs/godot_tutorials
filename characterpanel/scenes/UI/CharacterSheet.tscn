@@ -22,36 +22,34 @@
 [node name="CharacterSheet" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 200.0
+margin_right = -1140.0
+margin_bottom = -190.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Background" type="NinePatchRect" parent="."]
-margin_left = 150.0
-margin_top = 150.0
-margin_right = 730.0
-margin_bottom = 840.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="V" type="VBoxContainer" parent="Background"]
+[node name="M" type="MarginContainer" parent="Background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_constants/separation = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+custom_constants/margin_right = 12
+custom_constants/margin_top = 12
+custom_constants/margin_left = 12
+custom_constants/margin_bottom = 12
 
-[node name="MarginContainer" type="MarginContainer" parent="Background/V"]
-margin_right = 580.0
-margin_bottom = 12.0
-rect_min_size = Vector2( 0, 12 )
-
-[node name="Main" type="HBoxContainer" parent="Background/V"]
+[node name="Main" type="HBoxContainer" parent="Background/M"]
+margin_left = 12.0
 margin_top = 12.0
-margin_right = 580.0
+margin_right = 668.0
 margin_bottom = 678.0
 size_flags_vertical = 3
 custom_constants/separation = 0
@@ -59,24 +57,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginLeft" type="MarginContainer" parent="Background/V/Main"]
-margin_right = 12.0
-margin_bottom = 666.0
-rect_min_size = Vector2( 12, 0 )
-
-[node name="LeftEquip" type="VBoxContainer" parent="Background/V/Main"]
-margin_left = 12.0
-margin_right = 112.0
+[node name="LeftEquip" type="VBoxContainer" parent="Background/M/Main"]
+margin_right = 100.0
 margin_bottom = 666.0
 rect_min_size = Vector2( 94, 0 )
 custom_constants/separation = 20
 
-[node name="MarginContainer" type="MarginContainer" parent="Background/V/Main/LeftEquip"]
+[node name="MarginContainer" type="MarginContainer" parent="Background/M/Main/LeftEquip"]
 margin_right = 100.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 0, 25 )
 
-[node name="Head" type="TextureRect" parent="Background/V/Main/LeftEquip"]
+[node name="Head" type="TextureRect" parent="Background/M/Main/LeftEquip"]
 margin_top = 45.0
 margin_right = 100.0
 margin_bottom = 145.0
@@ -86,7 +78,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/LeftEquip/Head"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/LeftEquip/Head"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -99,7 +91,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Neck" type="TextureRect" parent="Background/V/Main/LeftEquip"]
+[node name="Neck" type="TextureRect" parent="Background/M/Main/LeftEquip"]
 margin_top = 165.0
 margin_right = 100.0
 margin_bottom = 265.0
@@ -109,7 +101,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/LeftEquip/Neck"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/LeftEquip/Neck"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -122,7 +114,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Chest" type="TextureRect" parent="Background/V/Main/LeftEquip"]
+[node name="Chest" type="TextureRect" parent="Background/M/Main/LeftEquip"]
 margin_top = 285.0
 margin_right = 100.0
 margin_bottom = 385.0
@@ -132,7 +124,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/LeftEquip/Chest"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/LeftEquip/Chest"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -145,7 +137,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Legs" type="TextureRect" parent="Background/V/Main/LeftEquip"]
+[node name="Legs" type="TextureRect" parent="Background/M/Main/LeftEquip"]
 margin_top = 405.0
 margin_right = 100.0
 margin_bottom = 505.0
@@ -155,7 +147,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/LeftEquip/Legs"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/LeftEquip/Legs"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -168,7 +160,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Feets" type="TextureRect" parent="Background/V/Main/LeftEquip"]
+[node name="Feets" type="TextureRect" parent="Background/M/Main/LeftEquip"]
 margin_top = 525.0
 margin_right = 100.0
 margin_bottom = 625.0
@@ -178,7 +170,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/LeftEquip/Feets"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/LeftEquip/Feets"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -191,13 +183,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Middle" type="Control" parent="Background/V/Main"]
-margin_left = 112.0
-margin_right = 468.0
+[node name="Middle" type="Control" parent="Background/M/Main"]
+margin_left = 100.0
+margin_right = 556.0
 margin_bottom = 666.0
 size_flags_horizontal = 3
 
-[node name="NameBackground" type="TextureRect" parent="Background/V/Main/Middle"]
+[node name="NameBackground" type="TextureRect" parent="Background/M/Main/Middle"]
 anchor_right = 1.0
 margin_bottom = 80.0
 rect_min_size = Vector2( 0, 80 )
@@ -207,12 +199,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Background/V/Main/Middle/NameBackground"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/M/Main/Middle/NameBackground"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Name" type="Label" parent="Background/V/Main/Middle/NameBackground/VBoxContainer"]
-margin_right = 356.0
+[node name="Name" type="Label" parent="Background/M/Main/Middle/NameBackground/VBoxContainer"]
+margin_right = 456.0
 margin_bottom = 45.0
 rect_min_size = Vector2( 0, 45 )
 custom_fonts/font = ExtResource( 15 )
@@ -221,17 +213,17 @@ text = "GDV Tutorial"
 align = 1
 valign = 2
 
-[node name="LabelClass" type="Label" parent="Background/V/Main/Middle/NameBackground/VBoxContainer"]
+[node name="LabelClass" type="Label" parent="Background/M/Main/Middle/NameBackground/VBoxContainer"]
 margin_top = 49.0
-margin_right = 356.0
-margin_bottom = 99.0
+margin_right = 456.0
+margin_bottom = 80.0
 size_flags_vertical = 7
 custom_fonts/font = ExtResource( 18 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Level 32 Warrior"
 align = 1
 
-[node name="Silhouette" type="TextureRect" parent="Background/V/Main/Middle"]
+[node name="Silhouette" type="TextureRect" parent="Background/M/Main/Middle"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 50.0
@@ -244,7 +236,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MiddleEquip" type="HBoxContainer" parent="Background/V/Main/Middle"]
+[node name="MiddleEquip" type="HBoxContainer" parent="Background/M/Main/Middle"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -256,10 +248,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MainHand" type="TextureRect" parent="Background/V/Main/Middle/MiddleEquip"]
-margin_left = 45.0
+[node name="MainHand" type="TextureRect" parent="Background/M/Main/Middle/MiddleEquip"]
+margin_left = 95.0
 margin_top = 10.0
-margin_right = 145.0
+margin_right = 195.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
@@ -267,7 +259,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/Middle/MiddleEquip/MainHand"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/Middle/MiddleEquip/MainHand"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -280,10 +272,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OffHand" type="TextureRect" parent="Background/V/Main/Middle/MiddleEquip"]
-margin_left = 210.0
+[node name="OffHand" type="TextureRect" parent="Background/M/Main/Middle/MiddleEquip"]
+margin_left = 260.0
 margin_top = 10.0
-margin_right = 310.0
+margin_right = 360.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
@@ -291,7 +283,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/Middle/MiddleEquip/OffHand"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/Middle/MiddleEquip/OffHand"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -304,19 +296,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RightEquip" type="VBoxContainer" parent="Background/V/Main"]
-margin_left = 468.0
-margin_right = 568.0
+[node name="RightEquip" type="VBoxContainer" parent="Background/M/Main"]
+margin_left = 556.0
+margin_right = 656.0
 margin_bottom = 666.0
 rect_min_size = Vector2( 94, 0 )
 custom_constants/separation = 20
 
-[node name="MarginContainer" type="MarginContainer" parent="Background/V/Main/RightEquip"]
+[node name="MarginContainer" type="MarginContainer" parent="Background/M/Main/RightEquip"]
 margin_right = 100.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 0, 25 )
 
-[node name="Back" type="TextureRect" parent="Background/V/Main/RightEquip"]
+[node name="Back" type="TextureRect" parent="Background/M/Main/RightEquip"]
 margin_top = 45.0
 margin_right = 100.0
 margin_bottom = 145.0
@@ -326,7 +318,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Back"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/RightEquip/Back"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -339,7 +331,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Shoulders" type="TextureRect" parent="Background/V/Main/RightEquip"]
+[node name="Shoulders" type="TextureRect" parent="Background/M/Main/RightEquip"]
 margin_top = 165.0
 margin_right = 100.0
 margin_bottom = 265.0
@@ -349,7 +341,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Shoulders"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/RightEquip/Shoulders"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -362,7 +354,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Wrists" type="TextureRect" parent="Background/V/Main/RightEquip"]
+[node name="Wrists" type="TextureRect" parent="Background/M/Main/RightEquip"]
 margin_top = 285.0
 margin_right = 100.0
 margin_bottom = 385.0
@@ -372,7 +364,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Wrists"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/RightEquip/Wrists"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -385,7 +377,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Hands" type="TextureRect" parent="Background/V/Main/RightEquip"]
+[node name="Hands" type="TextureRect" parent="Background/M/Main/RightEquip"]
 margin_top = 405.0
 margin_right = 100.0
 margin_bottom = 505.0
@@ -395,7 +387,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Hands"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/RightEquip/Hands"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -408,7 +400,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Fingers" type="TextureRect" parent="Background/V/Main/RightEquip"]
+[node name="Fingers" type="TextureRect" parent="Background/M/Main/RightEquip"]
 margin_top = 525.0
 margin_right = 100.0
 margin_bottom = 625.0
@@ -418,7 +410,7 @@ size_flags_vertical = 4
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Icon" type="TextureRect" parent="Background/V/Main/RightEquip/Fingers"]
+[node name="Icon" type="TextureRect" parent="Background/M/Main/RightEquip/Fingers"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -430,15 +422,3 @@ expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="MarginRight" type="MarginContainer" parent="Background/V/Main"]
-margin_left = 568.0
-margin_right = 580.0
-margin_bottom = 666.0
-rect_min_size = Vector2( 12, 0 )
-
-[node name="MarginContainer2" type="MarginContainer" parent="Background/V"]
-margin_top = 678.0
-margin_right = 580.0
-margin_bottom = 690.0
-rect_min_size = Vector2( 0, 12 )
