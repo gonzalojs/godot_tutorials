@@ -25,29 +25,35 @@ __meta__ = {
 [node name="M" type="MarginContainer" parent="Background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_constants/margin_right = 19
-custom_constants/margin_top = 11
-custom_constants/margin_left = 19
-custom_constants/margin_bottom = 11
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 25
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="V" type="VBoxContainer" parent="Background/M"]
-margin_left = 19.0
-margin_top = 11.0
-margin_right = 560.0
-margin_bottom = 679.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 559.0
+margin_bottom = 665.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Background/M/V"]
-margin_right = 541.0
+[node name="Header" type="HBoxContainer" parent="Background/M/V"]
+margin_right = 539.0
 margin_bottom = 80.0
 rect_min_size = Vector2( 0, 80 )
 
-[node name="HSplitContainer" type="HSplitContainer" parent="Background/M/V"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/M/V"]
 margin_top = 84.0
-margin_right = 541.0
-margin_bottom = 668.0
+margin_right = 539.0
+margin_bottom = 645.0
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Background/M/V/ScrollContainer"]
+margin_right = 539.0
+margin_bottom = 561.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Foreground" type="NinePatchRect" parent="."]
