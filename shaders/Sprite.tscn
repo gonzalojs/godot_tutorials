@@ -5,7 +5,17 @@
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
-"
+void fragment(){
+	//code in this function runs on every pixel
+}
+
+void vertex(){
+	//code run in each vertex
+}
+
+void light(){
+	//cide affects light pricessing
+}"
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = SubResource( 1 )
