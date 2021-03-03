@@ -43,6 +43,7 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 560.0
 margin_bottom = 665.0
+custom_constants/separation = 25
 
 [node name="Header" type="HBoxContainer" parent="Background/M/V"]
 margin_right = 540.0
@@ -95,14 +96,14 @@ __meta__ = {
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Background/M/V"]
-margin_top = 84.0
+margin_top = 105.0
 margin_right = 540.0
 margin_bottom = 645.0
 size_flags_vertical = 3
 
 [node name="GridContainer" type="GridContainer" parent="Background/M/V/ScrollContainer"]
-margin_right = 528.0
-margin_bottom = 630.0
+margin_right = 540.0
+margin_bottom = 540.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/vseparation = 12
@@ -569,125 +570,6 @@ texture = ExtResource( 7 )
 expand = true
 
 [node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv24"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv25" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_left = 428.0
-margin_top = 428.0
-margin_right = 523.0
-margin_bottom = 523.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv25"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv26" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_top = 535.0
-margin_right = 95.0
-margin_bottom = 630.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv26"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv27" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_left = 107.0
-margin_top = 535.0
-margin_right = 202.0
-margin_bottom = 630.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv27"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv28" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_left = 214.0
-margin_top = 535.0
-margin_right = 309.0
-margin_bottom = 630.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv28"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv29" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_left = 321.0
-margin_top = 535.0
-margin_right = 416.0
-margin_bottom = 630.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv29"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Inv30" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer"]
-margin_left = 428.0
-margin_top = 535.0
-margin_right = 523.0
-margin_bottom = 630.0
-rect_min_size = Vector2( 95, 95 )
-texture = ExtResource( 7 )
-expand = true
-
-[node name="Icon" type="TextureRect" parent="Background/M/V/ScrollContainer/GridContainer/Inv30"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0

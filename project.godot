@@ -19,6 +19,11 @@ config/name="tutorials"
 run/main_scene="res://characterpanel/scenes/SceneHandler.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameData="*res://Singletones/GameData.gd"
+PlayerData="*res://Singletones/PlayerData.gd"
+
 [display]
 
 window/size/width=1920
