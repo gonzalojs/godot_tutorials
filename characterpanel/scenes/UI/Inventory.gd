@@ -1,16 +1,12 @@
 extends Control
 
+var template_inv_slot = preload("res://characterpanel/scenes/UI/InventorySlot/Inv1.tscn")
 
-# Declare member variables here. Examples:
-# var a: int = 2
-# var b: String = "text"
+onready var gridcontainer = $Background/M/V/ScrollContainer/GridContainer
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+	for i in PlayerData.inv_data.keys():
+		var inv_slot_new = template_inv_slot.instance()
+		if PlayerData.inv_data[i]["Item"] != null:
+			var item_name = GameData.item_data[str(PlayerData.inv_data[i]["Item"])]["Name"]
+			var icon_texture = load()
