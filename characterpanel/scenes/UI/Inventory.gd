@@ -10,4 +10,5 @@ func _ready() -> void:
 		if PlayerData.inv_data[i]["Item"] != null:
 			var item_name = GameData.item_data[str(PlayerData.inv_data[i]["Item"])]["Name"]
 			var icon_texture = load("res://assets/Icon_Items/" + item_name + '.png') #aqui van los assets de íconos
+			inv_slot_new.get_node("Icon").set_texture(icon_texture)
 		gridcontainer.add_child(inv_slot_new, true)

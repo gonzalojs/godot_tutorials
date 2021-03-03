@@ -1,7 +1,5 @@
 extends Node
 
-
-
 var inv_data = {}
 
 func _ready() -> void:
