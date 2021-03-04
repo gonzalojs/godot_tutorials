@@ -16,7 +16,6 @@ func get_drag_data(_position: Vector2):
 
 func can_drop_data(_position: Vector2, data) -> bool:
 	return true
-	return false
 
 
 func drop_data(_position: Vector2, data) -> void:
