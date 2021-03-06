@@ -2,6 +2,8 @@ extends TextureRect
 
 func get_drag_data(_position: Vector2):
 	var data = {}
+	data["origin_texture"] = texture
+	
 	var drag_texture = TextureRect.new()
 	drag_texture.expand = true
 	drag_texture.texture = texture
