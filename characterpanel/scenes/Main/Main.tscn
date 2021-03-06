@@ -113,6 +113,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 22 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -136,6 +137,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 15 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -159,6 +161,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 23 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -182,6 +185,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 19 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -205,6 +209,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 16 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -319,6 +324,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 25 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -354,6 +360,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 11 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -377,6 +384,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 24 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -400,6 +408,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 17 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -423,6 +432,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 18 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -446,6 +456,7 @@ margin_right = -3.0
 margin_bottom = -3.0
 texture = ExtResource( 12 )
 expand = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
