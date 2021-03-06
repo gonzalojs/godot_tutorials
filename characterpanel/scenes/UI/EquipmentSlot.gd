@@ -22,4 +22,4 @@ func can_drop_data(_position: Vector2, data) -> bool:
 
 
 func drop_data(_position: Vector2, data) -> void:
-	pass
+	texture = data["origin_texture"]
